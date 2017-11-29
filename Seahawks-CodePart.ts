@@ -1,4 +1,4 @@
-		public update(options: VisualUpdateOptions) {
+        public update(options: VisualUpdateOptions) {
             this.clear();
             if (!this.optionsIsCorrect(options)) {
                 return;
