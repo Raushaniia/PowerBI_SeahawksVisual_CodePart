@@ -22,7 +22,7 @@
             this.addTooltips(options);
         }
 
-		private render(options: VisualUpdateOptions) {
+        private render(options: VisualUpdateOptions) {
             let linesDataExists = this.lines.length > 0;
 
             if (linesDataExists) {
@@ -45,7 +45,7 @@
             }
         }
 		
-		private renderLegend() {
+        private renderLegend() {
             let legend: nv.Legend = this.nvd3.models.legend()
                 .rightAlign(false)
                 .height(this.viewport.height)
@@ -54,7 +54,7 @@
             this.svg.datum(this.lines).call(legend);
         }
 		
-		private renderMultiChart(options: VisualUpdateOptions) {
+        private renderMultiChart(options: VisualUpdateOptions) {
             let self = this;
 			
             this.dateFormat = this.dateFormat ? this.dateFormat : 'MM/DD/YYYY';
